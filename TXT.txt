@@ -1,0 +1,3 @@
+get the currentlocatrion of the user
+protect your key (look at security practices)
+if no geo set dafault location

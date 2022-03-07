@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="stylesheet" href="font awesome/css/all.css" />
+          <link rel="stylesheet" href="style.css" />
+          <title>Weather App</title>
+     </head>
+
+     <body>
+          <header>
+               <div class="inner-header">
+                    <div class="logo-container">
+                         <img
+                              src="https://routeweather.netlify.app/images/logo@2x.png"
+                              class="logo"
+                              alt="header-logo"
+                         />
+                         <div class="padding-left-15">
+                              <h1 style="font-size: 1rem; font-weight: 700">
+                                   Weather
+                              </h1>
+                              <small>tagline goes here</small>
+                         </div>
+                    </div>
+                    <nav>
+                         <ul>
+                              <li class="home-link">
+                                   <a class="home-nav-link" href="">Home</a>
+                              </li>
+                              <li><a href="">News</a></li>
+                              <li>
+                                   <a href="">Live cameras</a>
+                              </li>
+                              <li><a href="">Photos</a></li>
+                              <li><a href="">Contact</a></li>
+                         </ul>
+                    </nav>
+               </div>
+          </header>
+          <main id="main-section" class="color-white">
+               <div class="inner-main">
+                    <form action="">
+                         <input
+                              type="text"
+                              id="search"
+                              placeholder="Find your location..."
+                         />
+                         <button class="button-component" id="find">
+                              Find
+                         </button>
+                    </form>
+                    <section class="d-flex forecast-container m60b">
+                         <div class="day1 width-33 color-edge">
+                              <header
+                                   class="
+                                        display-flex
+                                        header-edge
+                                        color-gray
+                                        f400-14
+                                        p-7v
+                                        p20h
+                                   "
+                              >
+                                   <var class="day"></var>
+                                   <var class="date"></var>
+                              </header>
+                              <div class="p20">
+                                   <var
+                                        class="region color-gray f400-18 p-20v"
+                                   ></var>
+                                   <div
+                                        style="
+                                             justify-content: space-between;
+                                             padding-left: 5px;
+                                             padding-right: 5px;
+                                        "
+                                        class="d-flex p60b"
+                                   >
+                                        <var class="temp f700-68"></var>
+                                        <img src="" alt="" class="icon" />
+                                   </div>
+                                   <var class="text p30b"> </var>
+                                   <div
+                                        style="width: 60%"
+                                        class="dayonestats d-flex color-gray"
+                                   >
+                                        <div
+                                             class="d-flex align-center p-right"
+                                        >
+                                             <img
+                                                  class="square p-right-5"
+                                                  src="https://routeweather.netlify.app/images/icon-umberella@2x.png"
+                                                  alt=""
+                                             />
+                                             <var class="rain width-33"></var>
+                                        </div>
+                                        <div
+                                             class="d-flex align-center p-right"
+                                        >
+                                             <img
+                                                  class="square p-right-5"
+                                                  src="https://routeweather.netlify.app/images/icon-wind@2x.png"
+                                                  alt=""
+                                             />
+                                             <var class="wind width-33"></var>
+                                        </div>
+                                        <div
+                                             class="d-flex align-center p-right"
+                                        >
+                                             <img
+                                                  class="square p-right-5"
+                                                  src="https://routeweather.netlify.app/images/icon-compass@2x.png"
+                                                  alt=""
+                                             />
+                                             <var class="windD width-33"></var>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div
+                              style="background-color: #262936"
+                              class="day2 width-33"
+                         >
+                              <header
+                                   class="
+                                        header-edge
+                                        color-gray
+                                        f400-14
+                                        p-7v
+                                        d-flex
+                                        flex-center
+                                   "
+                              ></header>
+                              <div
+                                   class="
+                                        d-flex
+                                        flex-column flex-center
+                                        height-100
+                                        align-center
+                                   "
+                              >
+                                   <img src="" alt="" class="icon w-48px" />
+                                   <var
+                                        class="temp p-top-45 font-mintemp"
+                                   ></var>
+                                   <var
+                                        class="mintemp color-gray p-top-15"
+                                   ></var>
+                                   <var class="text p-top-45 p60b"></var>
+                              </div>
+                         </div>
+                         <div class="day3 width-33 color-edge">
+                              <header
+                                   class="
+                                        header-edge
+                                        color-gray
+                                        f400-14
+                                        p-7v
+                                        d-flex
+                                        flex-center
+                                   "
+                              ></header>
+                              <div
+                                   class="
+                                        d-flex
+                                        flex-column flex-center
+                                        height-100
+                                        align-center
+                                   "
+                              >
+                                   <img src="" alt="" class="icon w-48px" />
+                                   <var
+                                        class="temp p-top-45 font-mintemp"
+                                   ></var>
+                                   <var
+                                        class="mintemp color-gray p-top-15"
+                                   ></var>
+                                   <var class="text p-top-45 p60b"></var>
+                              </div>
+                         </div>
+                    </section>
+               </div>
+          </main>
+
+          <footer>
+               <div class="inner-footer">
+                    <section class="contacts">
+                         <form style="width: 60%; margin: 50px 0" action="">
+                              <input
+                                   type="text"
+                                   placeholder="Enter your email to subscribe..."
+                              />
+                              <button class="button-component" id="subscribe">
+                                   Subscribe
+                              </button>
+                         </form>
+                         <address>
+                              <ul>
+                                   <li>
+                                        <a href="">
+                                             <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="">
+                                             <i class="fab fa-twitter"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="">
+                                             <i
+                                                  class="fab fa-google-plus-g"
+                                             ></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="">
+                                             <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </address>
+                    </section>
+                    <p
+                         style="
+                              color: #bfc1c8;
+                              font-size: 0.875rem;
+                              font-weight: 300;
+                              margin-bottom: 60px;
+                         "
+                         id="discalimer"
+                    >
+                         Copyright 2014 Company name. Designed by Themezy. All
+                         rights reserved
+                    </p>
+               </div>
+          </footer>
+
+          <script src="jquery-3.6.0.min.js"></script>
+          <script src="js.js"></script>
+     </body>
+</html>
